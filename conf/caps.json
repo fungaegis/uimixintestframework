@@ -1,0 +1,16 @@
+{
+  "devices": {
+    "Emulator": {
+      "platformName": "Android",
+      "platformVersion": "7.1.2",
+      "deviceName": "Emulator",
+      "automationName": "UiAutomator2"
+    },
+    "samsung-10": {
+      "platformName": "Android",
+      "platformVersion": "10",
+      "deviceName": "172.16.16.67:5555",
+      "automationName": "UiAutomator2"
+    }
+  }
+}

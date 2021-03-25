@@ -1,0 +1,79 @@
+{
+  "G": {
+    "product": "product",
+    "services": {
+      "DEBUG": "http://172.16.16.84:4444/wd/hub",
+      "PROD": "http://localhost:4444/wd/hub"
+    },
+    "env": {
+      "dev": {
+        "init": {
+          "web_user": "",
+          "web_password": ""
+        },
+        "service": {
+          "web": "http://172.16.16.10/login"
+        },
+        "log": {
+          "logger_level": "DEBUG",
+          "stream_level": "DEBUG",
+          "file_level": "INFO",
+          "file_level_rf": "INFO"
+        },
+        "mysql": {
+          "host": "172.16.16.30",
+          "port": "3306",
+          "user": "user",
+          "password": "password"
+        }
+      },
+      "test": {
+        "init": {
+          "web_user": "web_user",
+          "web_password": "web_password"
+        },
+        "service": {
+          "web": "http://172.16.16.40/login"
+        },
+        "log": {
+          "logger_level": "DEBUG",
+          "stream_level": "DEBUG",
+          "file_level": "INFO",
+          "file_level_rf": "INFO"
+        },
+        "mysql": {
+          "host": "172.16.16.40",
+          "port": "3306",
+          "user": "user",
+          "password": "password"
+        }
+      }
+    }
+  },
+  "B": {
+    "product": "baidu",
+    "services": {
+      "DEBUG": "http://172.16.16.84:4444/wd/hub",
+      "PROD": "http://localhost:4444/wd/hub"
+    },
+    "env": {
+      "test": {
+        "service": {
+          "web": "https://image.baidu.com/"
+        },
+        "log": {
+          "logger_level": "DEBUG",
+          "stream_level": "DEBUG",
+          "file_level": "INFO",
+          "file_level_rf": "INFO"
+        },
+        "mysql": {
+          "host": "172.16.16.30",
+          "port": "3306",
+          "user": "user",
+          "password": "password"
+        }
+      }
+    }
+  }
+}

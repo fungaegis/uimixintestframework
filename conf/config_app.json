@@ -1,0 +1,46 @@
+{
+  "G": {
+    "product": "tencent",
+    "services": {
+      "DEBUG": "http://localhost:4723/wd/hub",
+      "HUB": "http://172.16.16.84:5555/wd/hub"
+    },
+    "caps": {
+      "appPackage": "com.tencent.mm",
+      "appActivity": "com.tencent.mm.ui.LauncherUI",
+      "platformName": "Android",
+      "noReset": false,
+      "autoGrantPermissions": true
+    },
+    "env": {
+      "dev": {
+        "log": {
+          "logger_level": "DEBUG",
+          "stream_level": "DEBUG",
+          "file_level": "INFO",
+          "file_level_rf": "INFO"
+        },
+        "mysql": {
+          "host": "172.16.16.30",
+          "port": "3306",
+          "user": "user",
+          "password": "password"
+        }
+      },
+      "test": {
+        "log": {
+          "logger_level": "DEBUG",
+          "stream_level": "DEBUG",
+          "file_level": "INFO",
+          "file_level_rf": "INFO"
+        },
+        "mysql": {
+          "host": "172.16.16.40",
+          "port": "3306",
+          "user": "user",
+          "password": "password"
+        }
+      }
+    }
+  }
+}
